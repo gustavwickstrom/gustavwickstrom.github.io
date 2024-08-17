@@ -3,7 +3,7 @@
 :root {
     --background-color: #3498db;
     --primary-color: #000000;
-    --font-size-large: 24px;
+    --font-size-large: 24em;
     --font-size-medium: 20px;
     --font-size-small: 16px;
 }
