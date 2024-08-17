@@ -10,4 +10,5 @@ function loadHTML(elementId, filePath) {
 }
 
 // Ladda header och footer
-loadHTML('header', 'header.html');
+loadHTML('header-placeholder', 'header.html');
+loadHTML('footer-placeholder', 'footer.html');
