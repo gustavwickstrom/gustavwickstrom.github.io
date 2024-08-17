@@ -1,7 +1,13 @@
-// script.js
-console.log("Detta är ett meddelande från en extern JavaScript-fil.");
-
-// Exempel på en funktion
-function showAlert() {
-    alert("Hej! Du har precis kört en funktion från en extern JavaScript-fil.");
+function loadHTML(elementId, filePath) {
+    fetch(filePath)
+        .then(response => response.text())
+        .then(data => {
+            document.getElementById(elementId).innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error loading HTML:', error);
+        });
 }
+
+// Ladda header och footer
+loadHTML('header', 'header.html');
